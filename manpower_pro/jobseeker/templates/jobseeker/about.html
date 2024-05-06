@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'styles/about.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'jobseeker:index' %}">Home</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Companies</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="{% url 'jobseeker:contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Welcome to our job portal website. We strive to connect job seekers with great opportunities and assist companies in finding the right talent.</p>
+                <p>Our mission is to make the job search and recruitment process efficient, transparent, and rewarding for everyone involved.</p>
+                <h2>Our Team</h2>
+                <div class="team-member">
+                    <img src="{% static 'images/team-member.jpg' %}" alt="Team Member">
+                    <h3>John Doe</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="{% static 'images/team-member2.jpg' %}" alt="Team Member">
+                    <h3>Jane Smith</h3>
+                    <p>Head of Operations</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Manpower Job Portal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

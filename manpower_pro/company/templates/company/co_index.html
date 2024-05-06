@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manpower Job Portal</title>
+    <link rel="stylesheet" href="{% static 'styles/co-index.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse Jobs</a></li>
+                <li><a href="#">Post a Job</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to the Manpower Job Portal</h1>
+                <p>Find the perfect job that matches your skills.</p>
+                <a href="#" class="btn">Browse Jobs</a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Why Choose Us?</h2>
+                <div class="feature-item">
+                    <img src="images/widerange.jpg" alt="Feature Icon">
+                    <h3>Wide Range of Jobs</h3>
+                    <p>Explore a variety of job opportunities across different industries.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/userfriendly.avif" alt="Feature Icon">
+                    <h3>User-friendly Interface</h3>
+                    <p>Easily navigate through our portal and apply for jobs hassle-free.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/we need you.avif" alt="Feature Icon">
+                    <h3>Job Alerts</h3>
+                    <p>Receive notifications about new job postings matching your preferences.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Manpower Job Portal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
